@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* e90f1f */
+.bg-sl {
+  background-image: repeating-linear-gradient(150deg, #000000, #000000 94%, #ffffff 94%, #ffffff 98%, #000000 98%, #000000 100%);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* white background */
+.bg-w {
+  background-color: #ffffff;
+}
+
+/* Black background */
+.bg-b {
+  background-color: #000000;
+}
+
+/* White color */
+.col-w {
+  color: #ffffff;
+}
+
+.col-b {
+  color: #000000;
+}
+
+.col-r {
+  color: #e90f1f;
+}
+
+/* Gray color */
+.col-g {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.f {
+  filter: invert(2);
+}
+
+.bg-wh {
+  background-color: #ffffff;
+}
+
+.bg-bl {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.body {
+  overflow: hidden;
+  background-color: #000000;
+}
+
+.m-x {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.x-1 {
+  background-color: #ffffff;
+  background-size: 0.6em 100%;
+  animation: intro 2s ease forwards;
+  position: relative;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100vh;
+  animation: intro 1s ease-in forwards;
+}
+
+@keyframes intro {
+  0% {
+    opacity: 0;
+    background-image: linear-gradient(90deg, #FFFFFF, #FFFFFF 0.2em, #000000 0.2em, #000000);
+  }
+
+  50% {
+    opacity: 0.5;
+    background-image: linear-gradient(90deg, #FFFFFF, #FFFFFF 0.2em, #000000 0.2em, #000000);
+  }
+
+  100% {
+    opacity: 0.8;
+    background-image: linear-gradient(90deg, #FFFFFF, #FFFFFF 0.2em, #000000 0.2em, #000000);
+  }
+}
+
+.portfolio1 {
+  font-size: 4.2em;
+  font-weight: 900;
+  text-transform: uppercase;
+  position: absolute;
+  opacity: 0;
+  animation: portfolio1 0.5s 0.3s ease-in forwards;
+}
+
+@keyframes portfolio1 {
+  0% {
+    transform: scale(0.99);
+    opacity: 0.3;
+  }
+50%{
+  transform: scale(1);
+  opacity: 0.9;
+}
+  100% {
+  opacity: 1;
+  }
+}
+
+.portfolio2 {
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: fixed;
+  top: 1.5em;
+  left: 3.6em;
+  z-index: 200000;
+  transition: 1s;
+}
+
+.footer-1 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.footer-1-arrow {
+  cursor: pointer;
+  width: 3em;
+  height: 3em;
+  background-image: url("Images/expand.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  animation: footer 0.5s 0.5s ease-in infinite alternate;
+}
+
+@keyframes footer {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(0, -0.5em);
+  }
+}
+
+.section-2 {
+  position: relative;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-content: flex-start;
+  transition: 1s;
+}
+
+.section-2-2 {
+  position: absolute;
+  z-index: 100000;
+  top: 0;
+}
+
+.z {
+  margin: 0 0 0 5em;
+}
+
+.o {
+  opacity: 0.5;
+}
+
+h1 {
+  font-size: 5em;
+  font-weight: 900;
+}
+
+p {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.a-1 {
+  opacity: 0;
+  animation: intro-2 0.5s forwards;
+}
+
+.a-2 {
+  opacity: 0;
+  animation: intro-2 0.5s 0.3s forwards;
+}
+
+.a-3 {
+  opacity: 0;
+  animation: intro-2 0.5s 0.6s forwards;
+}
+
+@keyframes intro-2 {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0.9em);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.footer-2 {
+  position: absolute;
+  bottom: 2em;
+  font-size: 1.2em;
+  font-weight: 600;
+  width: 100%;
+  text-align: center;
+}
+
+.footer-2 {
+  animation: span 0.5s ease-in infinite alternate;
+}
+
+.span, .portfolio2 {
+  cursor: default;
+}
+
+@keyframes span {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(0, 0.5em);
+  }
+}
+
+@media (max-width:991px) {
+  body {
+    font-size: 2em;
+  }
+}

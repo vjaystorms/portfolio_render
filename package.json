@@ -1,0 +1,26 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "my portfolio",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vjaystorms/Blog-wedsite.git"
+  },
+  "author": "VjayStorms",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vjaystorms/landingPage-2.0/issues"
+  },
+  "homepage": "https://github.com/vjaystorms/landingPage-2.0#readme",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
+  }
+}
