@@ -189,7 +189,7 @@ a {
 }
 
 .z {
-  margin: 0 0 0 5em;
+  margin: 0 0 0 3.5em;
 }
 
 .o {
@@ -235,7 +235,7 @@ p {
 
 .footer-2 {
   position: absolute;
-  bottom: 2em;
+  bottom: 4em;
   font-size: 1.2em;
   font-weight: 600;
   width: 100%;
@@ -262,6 +262,6 @@ p {
 
 @media (max-width:991px) {
   body {
-    font-size: 2em;
+    font-size: 2.1em;
   }
 }

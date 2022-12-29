@@ -7,7 +7,7 @@ function remove() {
     $(".a1").removeClass("a-1");
     $(".a2").removeClass("a-2");
     $(".a3").removeClass("a-3");
-  }, 900);
+  }, 1000);
 }
 
 function toggle() {
