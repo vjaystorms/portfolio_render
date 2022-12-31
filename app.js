@@ -12,11 +12,24 @@
    if (z === 1) {
      z++;
      res.render("home", {});
-
    } else {
-     res.render("home2", {});
+     res.redirect("/Home-2")
    }
  })
+ app.get("/Home-2", (req, res) => {
+   res.render("home2", {});
+ })
+ ///////  PORTFOLIO    //////////
+ app.post("/", (req, res) => {
+   // res.render("home", {});
+   z = 1
+   res.redirect("/");
+ })
+ /////////////////////////////
+ app.post("/Home-2", (req, res) => {
+   res.redirect("/Home-2");
+ })
+
  app.get("/about", (req, res) => {
    res.render("about", {})
  })
