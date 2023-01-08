@@ -8,21 +8,37 @@
  }));
  app.use(express.static("public"));
  var z = 1;
+ var mode = "b"
+ var mode_invert = "w"
  app.get("/", (req, res) => {
    if (z === 1) {
      z++;
-     res.render("home", {});
+     res.render("home", {
+       mode: mode,
+       mode_invert: mode_invert
+     });
    } else {
      res.redirect("/Home-2")
    }
  })
  app.get("/Home-2", (req, res) => {
-   res.render("home2", {});
+   res.render("home2", {
+     mode: mode,
+     mode_invert: mode_invert
+   });
  })
  ///////  PORTFOLIO    //////////
  app.post("/", (req, res) => {
    // res.render("home", {});
    z = 1
+   var trigger = req.body.mode
+   if (trigger = "b") {
+     mode = "w"
+     mode_invert = "b"
+   } else {
+     mode = "b"
+     mode_invert = "w"
+   }
    res.redirect("/");
  })
  /////////////////////////////

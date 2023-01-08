@@ -1,5 +1,5 @@
 setTimeout(function() {
-  $(".x").addClass("x-1");
+  $(".x").addClass("x-1 x-1-b");
 }, 1500);
 
 function remove() {
@@ -17,20 +17,21 @@ function toggle() {
 }
 $(".footer-1-arrow").click(
   function() {
-    $(".body").css("overflow","scroll");
-    $(".portfolio1").toggleClass("portfolio2 col-w");
+    $(".body").css("overflow", "scroll");
+    $(".portfolio1").removeClass("black");
+    $(".portfolio1").toggleClass("portfolio2");
     setTimeout(function() {
-    $(".section-2").toggleClass("section-2-2");
-    $(".body").css("overflow","hidden");
-  }, 1200);
-  setTimeout(function() {
-    $(".text-1").text("Hello.");
-    $(".text-2").text("I am");
-    $(".text-3").text("Victor");
-    $("a").css("pointer-events","none");
-    toggle();
-    remove();
-}, 400);
+      $(".section-2").toggleClass("section-2-2");
+      $(".body").css("overflow", "hidden");
+    }, 1200);
+    setTimeout(function() {
+      $(".text-1").text("Hello.");
+      $(".text-2").text("I am");
+      $(".text-3").text("Victor");
+      $("a").css("pointer-events", "none");
+      toggle();
+      remove();
+    }, 400);
   }
 );
 let i = 0
@@ -40,7 +41,7 @@ $(".section-2").click(
       $(".text-1").text("Hello.");
       $(".text-2").text("I am");
       $(".text-3").text("Victor");
-      $("a").css("pointer-events","none");
+      $("a").css("pointer-events", "none");
       i--;
       toggle();
       remove();
@@ -48,7 +49,7 @@ $(".section-2").click(
       $(".text-1").text("About");
       $(".text-2").text("Work");
       $(".text-3").text("Contact");
-      $("a").css("pointer-events","auto");
+      $("a").css("pointer-events", "auto");
       i++;
       toggle();
       remove();
@@ -56,5 +57,5 @@ $(".section-2").click(
   }
 );
 function topFunction() {
-window.scrollTo(0,document.body.scrollHeight)
+  window.scrollTo(0, document.body.scrollHeight)
 }

@@ -14,9 +14,8 @@ body {
   font-size: 1em;
 }
 
-/* white background */
-.bg-w {
-  background-color: #ffffff;
+.col-r {
+  color: #e90f1f;
 }
 
 /* Black background */
@@ -24,19 +23,28 @@ body {
   background-color: #000000;
 }
 
+/* white background */
+.bg-w {
+  background-color: #ffffff;
+}
+
 /* White color */
 .col-w {
   color: #ffffff;
 }
 
-.col-r {
-  color: #e90f1f;
+/* Black color */
+.col-b {
+  color: #000000;
 }
 
 /* Gray color */
 .col-g {
   color: #000000;
-  opacity: 0.5;
+  opacity: 0.3;
+}
+.bg-bl {
+  background: rgba(0, 0, 0, 0.8);
 }
 
 .button {
@@ -69,7 +77,7 @@ h2 {
 .wrapper h3 {
   font-size: 2.5em;
   font-weight: 700;
-  margin: 3em 0 1.5em 0;
+  margin: 3em 0 0 0;
   letter-spacing: 0.1em;
   width: 50%;
   border-bottom: 0.125em solid #ffffff;
@@ -114,8 +122,6 @@ a {
   cursor: pointer;
 }
 
-ul a {}
-
 li {
   margin: 1.3em 0;
   list-style: none;
@@ -159,7 +165,16 @@ li {
     opacity: 1;
   }
 }
-
+.img{
+  width: 35em;
+  overflow-y: hidden;
+  height: 35em;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("Images/img.jpg");
+  margin: 4em 0;
+}
 @media (max-width:991px) {
   body {
     font-size: 2em;

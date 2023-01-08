@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap');
 
+/* background-image: repeating-linear-gradient(150deg, #000000, #000000 91%, #ffffff 91%, #ffffff 95%, #000000 95%, #000000 100%); */
 * {
   padding: 0;
   margin: 0;
@@ -11,18 +12,13 @@ html {
 }
 
 /* e90f1f */
-.bg-sl {
-  background-image: repeating-linear-gradient(150deg, #000000, #000000 91%, #ffffff 91%, #ffffff 95%, #000000 95%, #000000 100%);
-}
-
 a {
   text-decoration: none;
   color: inherit;
 }
 
-/* white background */
-.bg-w {
-  background-color: #ffffff;
+.col-r {
+  color: #e90f1f;
 }
 
 /* Black background */
@@ -30,17 +26,19 @@ a {
   background-color: #000000;
 }
 
+/* white background */
+.bg-w {
+  background-color: #ffffff;
+}
+
 /* White color */
 .col-w {
   color: #ffffff;
 }
 
+/* Black color */
 .col-b {
   color: #000000;
-}
-
-.col-r {
-  color: #e90f1f;
 }
 
 /* Gray color */
@@ -51,10 +49,6 @@ a {
 
 .f {
   filter: invert(2);
-}
-
-.bg-wh {
-  background-color: #ffffff;
 }
 
 .bg-bl {
@@ -80,7 +74,6 @@ a {
 }
 
 .x-1 {
-  background-color: #ffffff;
   background-size: 0.6em 100%;
   animation: intro 2s ease forwards;
   position: relative;
@@ -89,10 +82,19 @@ a {
   z-index: 100;
   width: 100%;
   height: 100vh;
-  animation: intro 1s ease-in forwards;
 }
 
-@keyframes intro {
+.x-1-b {
+  background-color: #ffffff;
+  animation: intro-b 1s ease-in forwards;
+}
+
+.x-1-w {
+  background-color: #000000;
+  animation: intro-w 1s ease-in forwards;
+}
+
+@keyframes intro-b {
   0% {
     opacity: 0;
     background-image: linear-gradient(90deg, #FFFFFF, #FFFFFF 0.2em, #000000 0.2em, #000000);
@@ -109,6 +111,48 @@ a {
   }
 }
 
+@keyframes intro-w {
+  0% {
+    opacity: 0;
+    background-image: linear-gradient(90deg, #000000, #000000 0.2em, #ffffff 0.2em, #ffffff);
+  }
+
+  50% {
+    opacity: 0.5;
+    background-image: linear-gradient(90deg, #000000, #000000 0.2em, #ffffff 0.2em, #ffffff);
+  }
+
+  100% {
+    opacity: 0.8;
+    background-image: linear-gradient(90deg, #000000, #000000 0.2em, #ffffff 0.2em, #ffffff);
+  }
+}
+
+.toggle-on, .toggle-off {
+  position: absolute;
+  top: 1em;
+  right: 3em;
+  width: 4.3em;
+  height: 4em;
+  z-index: 101;
+  cursor: pointer;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.toggle-on {
+  background-image: url("Images/toggle_on.png");
+  filter: invert(2);
+  transition: 1s;
+}
+
+.toggle-off {
+  filter: none;
+  background-image: url("Images/toggle_off.png");
+  transition: 1s;
+}
+
 .portfolio1 {
   font-size: 5em;
   font-weight: 900;
@@ -118,6 +162,31 @@ a {
   animation: portfolio1 0.5s 0.3s ease-in forwards;
 }
 
+.black {
+  color: black;
+}
+
+/* .vjaystorms{
+  font-size: 1.8em;
+  font-weight: 800;
+  position: absolute;
+  margin-top: 3em;
+  opacity: 0;
+  animation: vjaystorms 0.5s 0.7s ease-in forwards;
+}
+@keyframes vjaystorms {
+  0% {
+    opacity: 0.3;
+  }
+
+  50% {
+    opacity: 0.9;
+  }
+
+  100% {
+    opacity: 1;
+  }
+} */
 @keyframes portfolio1 {
   0% {
     transform: scale(0.99);
@@ -135,12 +204,12 @@ a {
 }
 
 .portfolio2 {
-  font-size: 1.8em;
+  font-size: 1.6em;
   font-weight: 800;
   text-transform: uppercase;
   position: fixed;
-  top: 1.5em;
-  left: 78px;
+  top: 1em;
+  right: 1.25em;
   z-index: 200000;
   transition: 1s;
 }
@@ -193,6 +262,9 @@ a {
   position: absolute;
   z-index: 100000;
   top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .z {
@@ -243,7 +315,7 @@ p {
 
 .footer-2 {
   position: absolute;
-  bottom: 4em;
+  bottom: 3em;
   font-size: 1.2em;
   font-weight: 600;
   width: 100%;
@@ -252,6 +324,10 @@ p {
 
 .footer-2 {
   animation: span 0.5s ease-in infinite alternate;
+}
+
+.span {
+  opacity: 0.8;
 }
 
 .span, .portfolio2 {

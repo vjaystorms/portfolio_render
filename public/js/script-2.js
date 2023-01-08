@@ -28,7 +28,7 @@ function about() {
 
 let i = 0
 
-$(".section-2-2").click(
+$(".section-2").click(
   function() {
     if (i === 1) {
       hello();
