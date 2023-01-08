@@ -103,6 +103,7 @@ p {
   cursor: default;
   max-width: 60em;
   animation: wrapper 0.5s 0.3s ease-in forwards;
+  max-width: 70em;
 }
 
 ul li:hover {
@@ -110,7 +111,8 @@ ul li:hover {
 }
 
 .wrapper {
-  padding: 3em;
+  padding: 3em 0 3em 3em;
+    /* padding: 3em */
 }
 
 a {
