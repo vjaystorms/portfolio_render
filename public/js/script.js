@@ -1,7 +1,3 @@
-setTimeout(function() {
-  $(".x").addClass("x-1 x-1-b");
-}, 1500);
-
 function remove() {
   setTimeout(function() {
     $(".a1").removeClass("a-1");
@@ -56,6 +52,7 @@ $(".section-2").click(
     }
   }
 );
+
 function topFunction() {
   window.scrollTo(0, document.body.scrollHeight)
 }

@@ -43,6 +43,7 @@ body {
   color: #000000;
   opacity: 0.3;
 }
+
 .bg-bl {
   background: rgba(0, 0, 0, 0.8);
 }
@@ -52,6 +53,7 @@ body {
   background: transparent;
   font-size: 2em;
   font-weight: 800;
+  cursor: pointer;
 }
 
 .header {
@@ -80,8 +82,8 @@ h2 {
   margin: 3em 0 0 0;
   letter-spacing: 0.1em;
   border-bottom: 0.125em solid #ffffff;
-  display:inline;
-  padding:  0 0 0.2em 0;
+  display: inline;
+  padding: 0 0 0.2em 0;
   cursor: default;
 }
 
@@ -113,7 +115,7 @@ ul li:hover {
 
 .wrapper {
   padding: 3em 0 3em 3em;
-    /* padding: 3em */
+  /* padding: 3em */
 }
 
 a {
@@ -168,7 +170,8 @@ li {
     opacity: 1;
   }
 }
-.img{
+
+.img {
   width: 35em;
   overflow-y: hidden;
   height: 35em;
@@ -178,14 +181,17 @@ li {
   background-image: url("Images/img.jpg");
   margin: 4em 0;
 }
-.contact-p{
+
+.contact-p {
   padding: 3em 0 0 0;
 }
+
 @media (max-width:991px) {
   body {
     font-size: 2em;
   }
-  .contact-p{
-      max-width: 23em;
+
+  .contact-p {
+    max-width: 23em;
   }
 }

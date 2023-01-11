@@ -28,32 +28,47 @@
    });
  })
  ///////  PORTFOLIO    //////////
- app.post("/", (req, res) => {
-   // res.render("home", {});
+ var n = 1
+ app.post("/toggle", (req, res) => {
    z = 1
-   var trigger = req.body.mode
-   if (trigger = "b") {
+   if (n === 1) {
+     n = 0
      mode = "w"
      mode_invert = "b"
-   } else {
+   } else if (n == 0) {
+     n = 1
      mode = "b"
      mode_invert = "w"
    }
+   res.redirect("/");
+ })
+ /////////
+ app.post("/", (req, res) => {
+   // res.render("home", {});
+   z = 1
    res.redirect("/");
  })
  /////////////////////////////
  app.post("/Home-2", (req, res) => {
    res.redirect("/Home-2");
  })
-
  app.get("/about", (req, res) => {
-   res.render("about", {})
+   res.render("about", {
+     mode: mode,
+     mode_invert: mode_invert
+   })
  })
  app.get("/contact", (req, res) => {
-   res.render("contact", {})
+   res.render("contact", {
+     mode: mode,
+     mode_invert: mode_invert
+   })
  })
  app.get("/work", (req, res) => {
-   res.render("work", {})
+   res.render("work", {
+     mode: mode,
+     mode_invert: mode_invert
+   })
  })
  app.listen(process.env.PORT || 3000, function() {
    console.log("Server is up and running at port 3000.");
