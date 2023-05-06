@@ -1,0 +1,27 @@
+.toggle-1 {
+  display: flex;
+  align-items: center;
+  width: 6em;
+  height: 3em;
+  background-color: #ffffff;
+  border: 0.35em solid #000000;
+  border-radius: 2em;
+}
+
+.toggle-2 {
+  width: 2.5em;
+  height: 2.5em;
+  background-color: #000000;
+  border-radius: 2.5em;
+  margin: 0.5em
+}
+
+.toggle-b {
+  transform: translate(0, 0);
+  transition: 0.5s;
+}
+
+.toggle-w {
+  transform: translate(2.5em, 0);
+  transition: 0.5s;
+}

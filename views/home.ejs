@@ -2,7 +2,11 @@
 
 <body class="body">
   <form action="/toggle" method="post">
-    <button type="submit" class="toggle-btn toggle-<%= mode %>"><span class="ball"></span></button>
+    <button type="submit" class="toggle-btn" name="button">
+    <div class="toggle-1">
+      <div class="toggle-2 toggle-<%= mode %>"></div>
+    </div>
+    </button>
   </form>
   <form action="/" method="post">
     <header class="m-x bg-w">
