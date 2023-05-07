@@ -1,19 +1,26 @@
 .toggle-1 {
+  position: absolute;
+  top: 1.5em;
+  right: 4em;
+  z-index: 101;
+  cursor: pointer;
   display: flex;
   align-items: center;
-  width: 6em;
-  height: 3em;
+  width: 6.5em;
+  height: 3.5em;
   background-color: #ffffff;
   border: 0.35em solid #000000;
   border-radius: 2em;
 }
-
+.toggle-1:focus{
+-webkit-tap-highlight-color:transparent;
+}
 .toggle-2 {
-  width: 2.5em;
-  height: 2.5em;
+  width: 2em;
+  height: 2em;
   background-color: #000000;
-  border-radius: 2.5em;
-  margin: 0.5em
+  border-radius: 2em;
+  margin: 0.5em;
 }
 
 .toggle-b {
@@ -22,6 +29,27 @@
 }
 
 .toggle-w {
-  transform: translate(2.5em, 0);
+  transform: translate(3em, 0);
   transition: 0.5s;
+}
+
+@media (max-width:991px) {
+  .toggle-1 {
+    width: 10.5em;
+    height: 5.5em;
+    border-radius: 5em;
+    border: 0.4em solid #000000;
+  }
+
+  .toggle-2 {
+    width: 3em;
+    height: 3em;
+    border-radius: 4em;
+    margin: 1em;
+  }
+
+  .toggle-w {
+    transform: translate(5em, 0);
+    transition: 0.5s;
+  }
 }
