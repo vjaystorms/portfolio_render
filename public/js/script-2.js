@@ -15,7 +15,7 @@ function toggle() {
 function hello() {
   $(".text-1").text("Hello.");
   $(".text-2").text("I am");
-  $(".text-3").text("Victor");
+  $(".text-3").text("Abiola");
   $("a").css("pointer-events", "none");
 }
 
