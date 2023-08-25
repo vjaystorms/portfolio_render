@@ -109,9 +109,9 @@ h5 {
 
 p {
   cursor: default;
-  max-width: 60em;
   animation: wrapper 0.5s 0.3s ease-in forwards;
   max-width: 70em;
+  line-height: 1.8em;
 }
 
 ul li:hover {
@@ -198,5 +198,8 @@ li {
 
   .contact-p {
     max-width: 23em;
-  }
+}
+    p {
+      width: 115%;
+    }
 }
