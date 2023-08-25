@@ -85,12 +85,14 @@ h2 {
   padding: 0 0 0.2em 0;
   cursor: default;
 }
- .line-w{
-     border-bottom: 0.125em solid #ffffff;
- }
- .line-b{
-     border-bottom: 0.125em solid #000000;
- }
+
+.line-w {
+  border-bottom: 0.125em solid #ffffff;
+}
+
+.line-b {
+  border-bottom: 0.125em solid #000000;
+}
 
 h4 {
   font-size: 3.8em;
@@ -112,6 +114,39 @@ p {
   animation: wrapper 0.5s 0.3s ease-in forwards;
   max-width: 70em;
   line-height: 1.8em;
+}
+
+.btn {
+  margin: 40px 0;
+}
+
+.resumebtn-w {
+  border: 10px solid #ffffff;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.resumebtn-b {
+  border: 10px solid #000000;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.resumebtn {
+  border-radius: 7px;
+  font-size: 1.3em;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-decoration: underline;
+}
+
+.resumebtn-b:hover {
+  opacity: 0.7;
+}
+
+.resumebtn-w:hover {
+  border: 10px solid #dfdfdf;
+  background-color: #dfdfdf;
 }
 
 ul li:hover {
@@ -198,8 +233,9 @@ li {
 
   .contact-p {
     max-width: 23em;
-}
-    p {
-      width: 115%;
-    }
+  }
+
+  p {
+    width: 115%;
+  }
 }
