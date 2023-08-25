@@ -117,23 +117,23 @@ p {
 }
 
 .btn {
-  margin: 40px 0;
+  margin: 5em 0;
 }
 
 .resumebtn-w {
-  border: 10px solid #ffffff;
+  border: 0.6em solid #ffffff;
   background-color: #ffffff;
   color: #000000;
 }
 
 .resumebtn-b {
-  border: 10px solid #000000;
+  border: 0.6em solid #000000;
   background-color: #000000;
   color: #ffffff;
 }
 
 .resumebtn {
-  border-radius: 7px;
+  border-radius: 0.3em;
   font-size: 1.3em;
   font-weight: 700;
   letter-spacing: 0.05em;
